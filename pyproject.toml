@@ -1,0 +1,35 @@
+[tool.pdm]
+[tool.pdm.scripts]
+dev = "python manage.py runserver"
+runserver = "python manage.py runserver"
+createsuperuser = "python manage.py createsuperuser"
+migrate = "python manage.py migrate"
+makemigrations = "python manage.py makemigrations"
+shell = "python manage.py shell"
+test = "python manage.py test"
+startapp = "python manage.py startapp {args}"
+loaddata = "python manage.py loaddata {args}"
+dumpdata = "python manage.py dumpdata {args}"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.3.0",
+]
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "RafaAlbano", email = "rafaelaalbano70@gmail.com"},
+]
+dependencies = [
+    "django>=4.2.4",
+    "djangorestframework>=3.14.0",
+    "django-cors-headers>=4.2.0",
+    "djangorestframework-simplejwt>=5.2.2",
+    "setuptools>=68.1.2",
+    "python-magic>=0.4.27",
+    "Pillow>=10.0.0",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
